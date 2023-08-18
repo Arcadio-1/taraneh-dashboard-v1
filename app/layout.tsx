@@ -1,5 +1,5 @@
 // app/layout.tsx
-import "./globals.css";
+import "@/style/globals.scss";
 
 import { ClerkProvider } from "@clerk/nextjs";
 
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" dir="rtl">
         <body>
           <ModalProviders />
           {children}
